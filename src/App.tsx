@@ -1,8 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+import "./App.css";
+const logo = require("./logo.svg");
 
-function App() {
+interface AppProps {}
+
+export const App: React.FC<AppProps> = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +23,4 @@ function App() {
       </header>
     </div>
   );
-}
-
-export default App;
+};
