@@ -9,6 +9,9 @@ All data was queried from [Google's Big Query service](https://cloud.google.com/
 ### Coming Soon
 
 - commit links (maybe not)
+- maybe some non-github quotes to pair it with
+- more content from `Big Query`, maybe automation (free tier tho)
+- a more stylish/dread-inducing site
 
 ### Coming Not So Soon But Eventually
 
