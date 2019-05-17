@@ -1,26 +1,25 @@
-import * as React from "react";
-import "./App.css";
-const logo = require("./logo.svg");
+import * as React from 'react'
+import './App.css'
+const existential_data = require('./devs_gazing_into_the_abyss.json')
 
 interface AppProps {}
 
+const getRandomValue = () => Math.floor(existential_data.length * Math.random())
+
 export const App: React.FC<AppProps> = () => {
+  const [index, setIndex] = React.useState(getRandomValue())
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div>{existential_data[index].subject}</div>
+        <div>{`-${existential_data[index].name}`}</div>
+        <button
+          onClick={() => setIndex(getRandomValue())}
+          style={{ margin: '8px', padding: '8px' }}
         >
-          Learn React
-        </a>
+          Git Existential
+        </button>
       </header>
     </div>
-  );
-};
+  )
+}
