@@ -10,6 +10,21 @@
   text-align: center;
 }
 
+.message {
+  padding: 16px;
+}
+
+.button {
+  border-radius: 2px;
+  font-size: 14px;
+  margin: 4px;
+  padding: 4px 8px;
+}
+
+.button-list {
+  display: flex;
+}
+
 .app-link {
   color: #61dafb;
 }
