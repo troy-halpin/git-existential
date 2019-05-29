@@ -9,17 +9,15 @@ const getRandomValue = () => Math.floor(existential_data.length * Math.random())
 export const App: React.FC<AppProps> = () => {
   const [index, setIndex] = React.useState(getRandomValue())
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>{existential_data[index].subject}</div>
-        <div>{`-${existential_data[index].name}`}</div>
-        <button
-          onClick={() => setIndex(getRandomValue())}
-          style={{ margin: '8px', padding: '8px' }}
-        >
-          Git Existential
-        </button>
-      </header>
+    <div className="app">
+      <div>{existential_data[index].subject}</div>
+      <div>{`-${existential_data[index].name}`}</div>
+      <button
+        onClick={() => setIndex(getRandomValue())}
+        style={{ margin: '8px', padding: '8px' }}
+      >
+        Git Existential
+      </button>
     </div>
   )
 }
