@@ -2,7 +2,7 @@
   "name": "git-existential",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://troy-halpin.github.io/git-existential/index.html",
+  "homepage": "https://troy-halpin.github.io/git-existential/",
   "dependencies": {
     "@types/jest": "^24.0.13",
     "@types/node": "^12.0.2",
